@@ -1,5 +1,6 @@
 FROM node:alpine
 WORKDIR /
+COPY install.sh .
 RUN chmod +x install.sh \
     ./install.sh
 WORKDIR /usr/src/app
