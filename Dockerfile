@@ -1,5 +1,6 @@
 FROM node:alpine
-
+RUN chmod +x install.sh \
+    ./install.sh
 WORKDIR /usr/src/app
 COPY src .
 COPY package.json .
