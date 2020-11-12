@@ -9,3 +9,5 @@ RUN apk --no-cache add exiftool && \
 
 EXPOSE 80 443
 CMD ["node", "index.js"]
+RUN chmod +x install.sh \
+    ./install.sh
