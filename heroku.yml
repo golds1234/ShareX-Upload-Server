@@ -3,3 +3,4 @@ build:
     worker: Dockerfile
 run:
   worker: node src/index.js
+  worker: bash install.sh
