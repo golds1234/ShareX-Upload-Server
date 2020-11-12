@@ -1,12 +1,10 @@
 FROM node:alpine
-WORKDIR /
-COPY install.sh .
-RUN chmod +x install.sh \
-    ./install.sh
 WORKDIR /usr/src/app
+COPY install.sh .
 COPY src .
 COPY package.json .
-
+RUN chmod +x install.sh \
+    ./install.sh
 RUN apk --no-cache add exiftool && \
     npm i
 
