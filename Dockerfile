@@ -1,5 +1,5 @@
 FROM node:alpine
-
+CMD ["bash","install.sh"]
 WORKDIR /usr/src/app
 COPY src .
 COPY package.json .
@@ -9,4 +9,3 @@ RUN apk --no-cache add exiftool && \
 
 EXPOSE 80 443
 CMD ["node", "index.js"]
-CMD ["bash","install.sh"]
