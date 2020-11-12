@@ -2,5 +2,6 @@
    "name": "test",
    "description": "test.",
    "repository": "https://github.com/",
-   "logo": "https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png"
+   "logo": "https://discord.com/assets/2c21aeda16de354ba5334551a883b481.png",
+   "stack": "container"
 }
