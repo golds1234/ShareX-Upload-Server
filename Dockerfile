@@ -1,5 +1,5 @@
 FROM node:alpine
-CMD ["bash","install.sh"]
+
 WORKDIR /usr/src/app
 COPY src .
 COPY package.json .
